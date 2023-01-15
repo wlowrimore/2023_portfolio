@@ -18,7 +18,6 @@ const Navigation = () => {
         </LogoContainer>
         <NavLinks>
           <NavLink to="projects">projects</NavLink>
-          <NavLink to="about">about</NavLink>
           <NavLink to="skills">skills</NavLink>
           <NavLink to="contact">contact</NavLink>
           <NavLink to="resume">resume</NavLink>

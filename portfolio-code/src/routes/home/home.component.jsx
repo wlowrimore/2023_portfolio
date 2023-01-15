@@ -1,9 +1,11 @@
 import { Outlet } from "react-router-dom";
+import ProfileImgCard from "../../components/profile/profile-image-card.component";
 
 const Home = () => {
   return (
     <div>
-      <h1>This is the home page!</h1>
+      <ProfileImgCard />
+      <h1>This is the about section!</h1>
       <Outlet />
     </div>
   );
