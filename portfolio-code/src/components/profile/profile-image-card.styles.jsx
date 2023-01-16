@@ -30,3 +30,11 @@ export const ImageCardContainer = styled.div`
     border-radius: 8px;
   }
 `;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: end;
+  width: 70%;
+  margin: auto;
+  padding: 14px 0;
+`;
