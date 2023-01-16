@@ -17,6 +17,7 @@ const Navigation = () => {
           <img src={Logo} alt="home" />
         </LogoContainer>
         <NavLinks>
+          <NavLink to="/">about</NavLink>
           <NavLink to="projects">projects</NavLink>
           <NavLink to="skills">skills</NavLink>
           <NavLink to="contact">contact</NavLink>

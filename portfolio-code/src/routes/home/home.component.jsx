@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <div>
       <ProfileImgCard />
-      <h1>This is the about section!</h1>
       <Outlet />
     </div>
   );
