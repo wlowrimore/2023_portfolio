@@ -1,12 +1,4 @@
-import { Fragment } from "react";
-import {
-  Title,
-  SkillsListContainer,
-  SkillContainer,
-  Name,
-} from "./skills.styles";
-
-const languages = [
+export const languages = () => [
   {
     id: 1,
     title: "HTML 5",
@@ -63,21 +55,3 @@ const languages = [
     image: "/logos/bootstrap_logo.png",
   },
 ];
-
-const Skills = () => {
-  return (
-    <Fragment>
-      <Title>Skills</Title>
-      <SkillsListContainer>
-        {languages.map((language) => (
-          <SkillContainer key={language.id}>
-            <Name>{language.title}</Name>
-            <img src={language.image} alt={language.title} />
-          </SkillContainer>
-        ))}
-      </SkillsListContainer>
-    </Fragment>
-  );
-};
-
-export default Skills;
