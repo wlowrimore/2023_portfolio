@@ -30,6 +30,12 @@ export const SkillContainer = styled.div`
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    opacity: 0.9;
+  }
+
   img {
     max-width: 30%;
     height: auto;

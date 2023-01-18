@@ -62,6 +62,11 @@ const languages = [
     title: "Bootstrap",
     image: "/logos/bootstrap_logo.png",
   },
+  {
+    id: 12,
+    title: "React Native | Firebase",
+    image: "/logos/reactNativeFB.png",
+  },
 ];
 
 const Skills = () => {

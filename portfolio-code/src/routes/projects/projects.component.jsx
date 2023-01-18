@@ -18,7 +18,7 @@ const Projects = ({ id, title, description, image }) => {
 
   return (
     <Fragment>
-      <Title>Projects</Title>
+      <Title>Featured Projects</Title>
       <ProjectList />
       <ButtonContainer>
         <Button
