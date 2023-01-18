@@ -1,8 +1,14 @@
+import { Fragment } from "react";
+import ContactForm from "../../components/constact-form/contact-form.component";
+
+import { ContactContainer, Title } from "./contact.styles";
+
 const Contact = () => {
   return (
-    <div>
-      <h1>This is the contact page!</h1>
-    </div>
+    <ContactContainer>
+      <Title>Contact</Title>
+      <ContactForm />
+    </ContactContainer>
   );
 };
 
