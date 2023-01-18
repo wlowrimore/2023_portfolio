@@ -1,3 +1,4 @@
+import Button from "../Button/button.component";
 import {
   ContactFormContainer,
   Form,
@@ -12,20 +13,17 @@ const ContactForm = () => {
       <Form>
         <h4>Let's Connect!</h4>
         <Label>Name</Label>
-        <Input type="text" name="name" />
+        <Input type="text" name="name" required />
 
         <Label>Subject</Label>
         <Input type="text" name="subject" />
 
         <Label>Email</Label>
-        <Input type="email" name="email" />
+        <Input type="email" name="email" required />
 
         <Label>Message</Label>
-        <TextArea type="text" />
-
-        <button type="submit" value="submit">
-          Send
-        </button>
+        <TextArea type="text" required rows="6" />
+        <Button buttonType={"inverted"}>Send</Button>
       </Form>
     </ContactFormContainer>
   );

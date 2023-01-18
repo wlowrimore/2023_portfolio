@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import AltContact from "../../components/alt-contact/alt-contact.component";
 import ContactForm from "../../components/constact-form/contact-form.component";
 
 import { ContactContainer, Title } from "./contact.styles";
@@ -8,6 +8,7 @@ const Contact = () => {
     <ContactContainer>
       <Title>Contact</Title>
       <ContactForm />
+      <AltContact />
     </ContactContainer>
   );
 };
