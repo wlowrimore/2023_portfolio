@@ -1,9 +1,12 @@
 import { Fragment } from "react";
+import { useNavigate } from "react-router-dom";
+import Button from "../../components/Button/button.component";
 import {
   Title,
   SkillsListContainer,
   SkillContainer,
   Name,
+  ButtonContainer,
 } from "./skills.styles";
 
 const languages = [
@@ -70,6 +73,12 @@ const languages = [
 ];
 
 const Skills = () => {
+  const navigate = useNavigate();
+
+  const goToResumeHandler = () => {
+    navigate("/resume");
+  };
+
   return (
     <Fragment>
       <Title>Skills</Title>
@@ -81,6 +90,11 @@ const Skills = () => {
           </SkillContainer>
         ))}
       </SkillsListContainer>
+      <ButtonContainer>
+        <Button buttonType={"base"} onClick={goToResumeHandler}>
+          Jump to Resume
+        </Button>
+      </ButtonContainer>
     </Fragment>
   );
 };

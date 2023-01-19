@@ -7,7 +7,7 @@ const AboutText = () => {
       development utilizing the M.E.R.N Stack. Throughout the program, I studied
       and implemented a variety of front-end and back-end skills. I have
       continued my education through other courses so as to maintain and gain
-      more widespread knowledge across the software development spectrum.
+      more widespread knowledge across the software development landscape.
       <br />
       <br />
       One of the most important things I learned as a student in the bootcamp is

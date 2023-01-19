@@ -9,7 +9,7 @@ const Projects = ({ id, title, description, image }) => {
   const navigate = useNavigate();
 
   const goToResumeHandler = () => {
-    navigate("resume");
+    navigate("/resume");
   };
 
   const githubRedirectHandler = () => {

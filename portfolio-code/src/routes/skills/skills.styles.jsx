@@ -48,3 +48,11 @@ export const Name = styled.p`
   display: flex;
   align-items: center;
 `;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: end;
+  width: 70%;
+  margin: auto;
+  padding: 14px 0;
+`;

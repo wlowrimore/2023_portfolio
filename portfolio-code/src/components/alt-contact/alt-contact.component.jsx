@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import {
   AltContactContainer,
   Title,
@@ -16,22 +18,35 @@ import {
 const AltContact = () => {
   return (
     <AltContactContainer>
-      <Title>Other Forms of Contact</Title>
+      <Title>Contact Links</Title>
       <IconsContainer>
         <Icon>
-          <FaGlobe />
+          <FaGlobe
+            onClick={() => window.open("https://www.williamlowrimore.com")}
+            rel="noreferrer"
+          />
         </Icon>
         <Icon>
-          <FaLinkedinIn />
+          <FaLinkedinIn
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/william-lowrimore-21778310"
+              )
+            }
+          />
         </Icon>
         <Icon>
-          <FaSlack />
+          <FaSlack
+            onClick={() => window.open("https://www.wlowrimore.slack.com")}
+          />
         </Icon>
         <Icon>
-          <FaGithub />
+          <FaGithub
+            onClick={() => window.open("https://www.github.com/wlowrimore")}
+          />
         </Icon>
         <Icon>
-          <FaDiscord />
+          <FaDiscord onClick={() => window.open("https://www.discord.com")} />
         </Icon>
       </IconsContainer>
     </AltContactContainer>

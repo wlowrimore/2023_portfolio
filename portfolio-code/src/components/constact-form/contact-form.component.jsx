@@ -83,7 +83,6 @@ const ContactForm = () => {
           onChange={handleStateChange}
           value={mailerState.message}
         />
-
         <Button buttonType={"inverted"} type="submit">
           Send
         </Button>
