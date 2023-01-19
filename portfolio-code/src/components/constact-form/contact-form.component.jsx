@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Button from "../Button/button.component";
 import {
   ContactFormContainer,
@@ -8,22 +10,83 @@ import {
 } from "./contact-form.styles";
 
 const ContactForm = () => {
+  const [mailerState, setMailerState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  function handleStateChange(e) {
+    setMailerState((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  }
+
+  const submitEmail = async (e) => {
+    e.preventDefault();
+    console.log({ mailerState });
+    await fetch("http://localhost:3001/send", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ mailerState }),
+    })
+      .then((res) => res.json())
+      .then(async (res) => {
+        const resData = await res;
+        console.log(resData);
+        if (resData.status === "success") {
+          alert("Message Sent");
+        } else if (resData.status === "fail") {
+          alert("Message failed to send");
+        }
+      })
+      .then(() => {
+        setMailerState({
+          email: "",
+          name: "",
+          message: "",
+        });
+      });
+  };
+
   return (
     <ContactFormContainer>
-      <Form>
+      <Form onSubmit={submitEmail}>
         <h4>Let's Connect!</h4>
-        <Label>Name</Label>
-        <Input type="text" name="name" required />
+        <Label htmlFor="name">Name</Label>
+        <Input
+          type="text"
+          name="name"
+          onChange={handleStateChange}
+          value={mailerState.name}
+          required
+        />
 
-        <Label>Subject</Label>
-        <Input type="text" name="subject" />
+        <Label htmlFor="email">Email</Label>
+        <Input
+          type="email"
+          name="email"
+          onChange={handleStateChange}
+          value={mailerState.email}
+          required
+        />
 
-        <Label>Email</Label>
-        <Input type="email" name="email" required />
+        <Label htmlFor="message">Message</Label>
+        <TextArea
+          type="text"
+          name="message"
+          required
+          rows="6"
+          onChange={handleStateChange}
+          value={mailerState.message}
+        />
 
-        <Label>Message</Label>
-        <TextArea type="text" required rows="6" />
-        <Button buttonType={"inverted"}>Send</Button>
+        <Button buttonType={"inverted"} type="submit">
+          Send
+        </Button>
       </Form>
     </ContactFormContainer>
   );

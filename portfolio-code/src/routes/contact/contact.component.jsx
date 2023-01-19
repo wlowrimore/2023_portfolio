@@ -6,7 +6,7 @@ import { ContactContainer, Title } from "./contact.styles";
 const Contact = () => {
   return (
     <ContactContainer>
-      <Title>Contact</Title>
+      <Title>Contact Me</Title>
       <ContactForm />
       <AltContact />
     </ContactContainer>
