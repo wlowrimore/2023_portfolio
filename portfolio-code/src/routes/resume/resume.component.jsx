@@ -1,8 +1,15 @@
+import { Fragment } from "react";
+import ResumeText from "../../components/resume-text/resume-text.component";
+import { ResumeContainer, ResumeTitle } from "./resume.styles";
+
 const Resume = () => {
   return (
-    <div>
-      <h1>This is the resume page!</h1>
-    </div>
+    <Fragment>
+      <ResumeTitle>Technical Resume</ResumeTitle>
+      <ResumeContainer>
+        <ResumeText />
+      </ResumeContainer>
+    </Fragment>
   );
 };
 
