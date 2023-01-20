@@ -34,8 +34,8 @@ const ResumeText = () => {
       <Text>
         As a certified full-stack developer with a passion for front-end
         development, I am currently seeking a web development role that will
-        allow me to contribute my skills as well as developing new skills along
-        the way.
+        allow me to contribute my skills as well as develop new skills along the
+        way.
       </Text>
       <SectionTitle>Education</SectionTitle>
       <SectionBody>

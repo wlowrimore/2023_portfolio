@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const RootContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+`;
+
 export const Title = styled.h1`
   font-weight: bold;
   width: 70%;
@@ -13,7 +20,7 @@ export const SkillsListContainer = styled.div`
   column-gap: 20px;
   flex-direction: column;
   align-items: center;
-  height: auto;
+  height: 100%;
   width: 70%;
   margin: auto;
 `;
@@ -37,7 +44,7 @@ export const SkillContainer = styled.div`
   }
 
   img {
-    max-width: 30%;
+    max-width: 40%;
     height: auto;
     padding: 12px;
   }
@@ -53,6 +60,6 @@ export const ButtonContainer = styled.div`
   display: flex;
   justify-content: end;
   width: 70%;
-  margin: auto;
+  margin: 20px auto;
   padding: 14px 0;
 `;

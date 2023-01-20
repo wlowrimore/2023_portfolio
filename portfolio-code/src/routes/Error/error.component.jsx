@@ -24,7 +24,7 @@ const Error = () => {
           <span>Whoops...You've reached a "Dead Link"!</span>
         </ErrorCode>
         <ErrorMessage>
-          Check your address bar. The URL you requested does not exist on the
+          Check your address bar. The URL you requested does not exist on this
           server.
         </ErrorMessage>
         <ButtonContainer>

@@ -1,8 +1,7 @@
-import { Fragment } from "react";
 import { useNavigate } from "react-router-dom";
 import ProjectList from "../../components/projectsList/projectList.component";
 
-import { ButtonContainer, Title } from "./projects.styles";
+import { ButtonContainer, RootContainer, Title } from "./projects.styles";
 import Button from "../../components/Button/button.component";
 
 const Projects = ({ id, title, description, image }) => {
@@ -17,7 +16,7 @@ const Projects = ({ id, title, description, image }) => {
   };
 
   return (
-    <Fragment>
+    <RootContainer>
       <Title>Featured Projects</Title>
       <ProjectList />
       <ButtonContainer>
@@ -32,7 +31,7 @@ const Projects = ({ id, title, description, image }) => {
           Jump to Resume
         </Button>
       </ButtonContainer>
-    </Fragment>
+    </RootContainer>
   );
 };
 

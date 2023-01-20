@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const RootContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 70%
+  height: 100vh;
+`;
+
 export const ResumeContainer = styled.div`
   display: flex;
   height: 100%;

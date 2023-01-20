@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { languages } from "../../javascript-content/skills-content";
@@ -10,6 +9,7 @@ import {
   SkillContainer,
   Name,
   ButtonContainer,
+  RootContainer,
 } from "./skills.styles";
 
 const Skills = () => {
@@ -20,7 +20,7 @@ const Skills = () => {
   };
 
   return (
-    <Fragment>
+    <RootContainer>
       <Title>Skills</Title>
       <SkillsListContainer>
         {languages.map((language) => (
@@ -35,7 +35,7 @@ const Skills = () => {
           Jump to Resume
         </Button>
       </ButtonContainer>
-    </Fragment>
+    </RootContainer>
   );
 };
 

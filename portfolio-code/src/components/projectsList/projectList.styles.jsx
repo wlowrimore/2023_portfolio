@@ -6,10 +6,15 @@ export const ProjectListContainer = styled.div`
   column-gap: 20px;
   flex-direction: column;
   align-items: center;
-  height: auto;
+  height: 100vh;
   width: 70%;
   margin: auto;
-
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
   span {
     display: none;
   }

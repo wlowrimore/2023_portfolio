@@ -1,15 +1,14 @@
-import { Fragment } from "react";
 import ResumeText from "../../components/resume-text/resume-text.component";
-import { ResumeContainer, ResumeTitle } from "./resume.styles";
+import { ResumeContainer, ResumeTitle, RootContainer } from "./resume.styles";
 
 const Resume = () => {
   return (
-    <Fragment>
+    <RootContainer>
       <ResumeTitle>Technical Resume</ResumeTitle>
       <ResumeContainer>
         <ResumeText />
       </ResumeContainer>
-    </Fragment>
+    </RootContainer>
   );
 };
 

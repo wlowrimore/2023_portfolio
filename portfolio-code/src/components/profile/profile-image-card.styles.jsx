@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const RootContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 100vh;
   width: 100%;
 `;
@@ -41,6 +42,6 @@ export const ButtonContainer = styled.div`
   display: flex;
   justify-content: end;
   width: 70%;
-  margin: auto;
+  margin: 0 auto;
   padding: 14px 0;
 `;
