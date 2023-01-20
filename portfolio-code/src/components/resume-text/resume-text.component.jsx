@@ -11,6 +11,8 @@ import {
   Text,
   Ul,
   GridUl,
+  CertificateContainer,
+  CertificateCard,
 } from "./resume-text.styles";
 
 const courses = [
@@ -99,6 +101,39 @@ const skills = [
   },
 ];
 
+const certificates = [
+  {
+    id: 1,
+    image: "/certificates/vandy.png",
+    name: "Vanderbilt University",
+  },
+  {
+    id: 2,
+    image: "/certificates/reactComplete.png",
+    name: "React Complete Course",
+  },
+  {
+    id: 3,
+    image: "/certificates/reactNative.png",
+    name: "React Native",
+  },
+  {
+    id: 4,
+    image: "/certificates/agileDevelopment.png",
+    name: "Agile Development",
+  },
+  {
+    id: 5,
+    image: "/certificates/agileLifeCycle.png",
+    name: "Agile Life Cycle",
+  },
+  {
+    id: 6,
+    image: "/certificates/rubyOnRails.png",
+    name: "Ruby on Rails",
+  },
+];
+
 const ResumeText = () => {
   return (
     <ResumeTextContainer>
@@ -152,6 +187,15 @@ const ResumeText = () => {
           AARP Ruby on Rails platform. Currently, I am focusing am working on my
           certification for advanced ReactJS.
         </Text>
+        <SectionTitle>Certified Achievements</SectionTitle>
+        <CertificateContainer>
+          {certificates.map((certificate) => (
+            <CertificateCard key={certificate.id}>
+              <img src={certificate.image} alt={certificate.name} />
+              <span>{certificate.name}</span>
+            </CertificateCard>
+          ))}
+        </CertificateContainer>
       </SectionBody>
     </ResumeTextContainer>
   );

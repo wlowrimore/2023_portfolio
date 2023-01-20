@@ -76,3 +76,34 @@ export const NormalLi = styled.li`
   text-indent: 20px;
   list-style: none;
 `;
+
+export const CertificateContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  column-gap: 20px;
+  flex-direction: column;
+`;
+
+export const CertificateCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 8px 0;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    opacity: 0.9;
+  }
+
+  img {
+    width: 65%;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 6px;
+  }
+`;
