@@ -1,10 +1,16 @@
 import styled from "styled-components";
 
+export const RootContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+`;
 export const AboutContainer = styled.div`
   display: flex;
   height: 400px;
   width: 70%;
-  margin: auto;
+  margin: 12px auto;
   border: 1px solid black;
   border-radius: 8px;
 `;
@@ -12,8 +18,8 @@ export const AboutContainer = styled.div`
 export const Title = styled.h1`
   font-weight: bold;
   width: 70%;
-  margin: auto;
-  padding: 12px 0;
+  margin: 12px auto;
+  padding: 0;
 `;
 
 export const ImageCardContainer = styled.div`

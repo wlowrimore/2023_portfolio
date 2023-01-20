@@ -8,6 +8,7 @@ import {
   NavLink,
 } from "./navigation.styles";
 import Logo from "../../assets/logo.png";
+import Footer from "../../components/footer/footer.component";
 
 const Navigation = () => {
   return (
@@ -25,6 +26,7 @@ const Navigation = () => {
         </NavLinks>
       </NavigationContainer>
       <Outlet />
+      <Footer />
     </Fragment>
   );
 };

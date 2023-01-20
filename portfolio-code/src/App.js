@@ -6,6 +6,7 @@ import Projects from "./routes/projects/projects.component";
 import Skills from "./routes/skills/skills.components";
 import Contact from "./routes/contact/contact.component";
 import Resume from "./routes/resume/resume.component";
+import Error from "./routes/Error/error.component";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="resume" element={<Resume />} />
       </Route>
+      <Route path="/*" element={<Error />} />
     </Routes>
   );
 }

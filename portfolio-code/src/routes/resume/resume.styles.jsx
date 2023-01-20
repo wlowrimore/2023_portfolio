@@ -4,10 +4,9 @@ export const ResumeContainer = styled.div`
   display: flex;
   height: 100%;
   width: 70%;
-  padding: 20px;
+  padding: 40px 60px 40px 60px;
   margin: auto;
-  border: 1px solid black;
-  border-radius: 8px;
+  border-top: 1px solid black;
 `;
 
 export const ResumeTitle = styled.h1`

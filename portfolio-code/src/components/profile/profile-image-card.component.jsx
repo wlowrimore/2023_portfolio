@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import { useNavigate } from "react-router-dom";
 
 import {
+  RootContainer,
   ImageCardContainer,
   AboutContainer,
   Title,
@@ -21,7 +22,7 @@ const ProfileImgCard = () => {
   };
 
   return (
-    <Fragment>
+    <RootContainer>
       <Title>My name is William Lowrimore...</Title>
       <AboutContainer>
         <ImageCardContainer>
@@ -34,7 +35,7 @@ const ProfileImgCard = () => {
           Jump to Resume
         </Button>
       </ButtonContainer>
-    </Fragment>
+    </RootContainer>
   );
 };
 
