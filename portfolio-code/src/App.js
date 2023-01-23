@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
+// import { AppContainer } from "./App.styles";
+
 import Navigation from "./routes/navigation/navigation.component";
 import Home from "./routes/home/home.component";
 import Projects from "./routes/projects/projects.component";

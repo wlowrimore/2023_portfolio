@@ -1,12 +1,14 @@
+import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
 import ProfileImgCard from "../../components/profile/profile-image-card.component";
+import { ComponentContainer } from "./home.styled";
 
 const Home = () => {
   return (
-    <div>
+    <ComponentContainer>
       <ProfileImgCard />
       <Outlet />
-    </div>
+    </ComponentContainer>
   );
 };
 

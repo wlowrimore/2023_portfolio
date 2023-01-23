@@ -1,4 +1,4 @@
-import { Text } from "./about-text.styles";
+import { Text, TextContainer } from "./about-text.styles";
 const AboutText = () => {
   return (
     <Text>

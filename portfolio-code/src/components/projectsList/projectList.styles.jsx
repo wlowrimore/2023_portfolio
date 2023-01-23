@@ -15,6 +15,7 @@ export const ProjectListContainer = styled.div`
   ::-webkit-scrollbar {
     display: none;
   }
+
   span {
     display: none;
   }

@@ -2,10 +2,12 @@ import { useNavigate } from "react-router-dom";
 
 import {
   RootContainer,
-  ImageCardContainer,
-  AboutContainer,
   Title,
+  AboutContainer,
+  ImageContainer,
+  AboutTextContainer,
   ButtonContainer,
+  Image,
 } from "./profile-image-card.styles";
 
 import AboutText from "../profile-about/about-text.component";
@@ -23,17 +25,28 @@ const ProfileImgCard = () => {
     <RootContainer>
       <Title>My name is William Lowrimore...</Title>
       <AboutContainer>
-        <ImageCardContainer>
-          <img src={Selfie} alt="selfie" />
-          <AboutText />
-        </ImageCardContainer>
+        <Image src={Selfie} alt="selfie" />
+
+        <AboutText />
+        <AboutTextContainer></AboutTextContainer>
       </AboutContainer>
-      <ButtonContainer>
-        <Button buttonType={"base"} onClick={goToResumeHandler}>
-          Jump to Resume
-        </Button>
-      </ButtonContainer>
     </RootContainer>
+    // <RootContainer>
+    //   <Title>My name is William Lowrimore...</Title>
+    //   <AboutContainer>
+    //     <ImageContainer>
+    //       <Image src={Selfie} alt="selfie" />
+    //     </ImageContainer>
+    //     <AboutTextContainer>
+    //       <AboutText />
+    //     </AboutTextContainer>
+    //   </AboutContainer>
+    //   <ButtonContainer>
+    //     <Button buttonType={"base"} onClick={goToResumeHandler}>
+    //       Jump to Resume
+    //     </Button>
+    //   </ButtonContainer>
+    // </RootContainer>
   );
 };
 
