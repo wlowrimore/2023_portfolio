@@ -11,6 +11,9 @@ export const FooterContainer = styled.div`
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
+    background-color: silver;
+    color: #000;
+    padding-top: 10px;
   }
 `;
 

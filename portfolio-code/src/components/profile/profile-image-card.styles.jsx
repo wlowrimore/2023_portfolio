@@ -6,14 +6,22 @@ export const RootContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-height: 80vh;
+  max-height: 85vh;
 `;
 
 export const Title = styled.h1`
   font-weight: bold;
   width: 70%;
   margin: 12px auto;
-  padding: 0;
+  padding: 0 27px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 export const AboutContainer = styled.div`
@@ -38,19 +46,27 @@ export const AboutContainer = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  max-width: 200px;
+  max-width: 250px;
+  max-height: 350px;
   padding: 4px;
-  border: 2px solid red;
+
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    max-height: 350px;
+  }
 `;
 
 export const Image = styled.img`
-  max-width: 200px;
-  max-height: 300px;
+  max-width: 250px;
+  max-height: 350px;
+  border-radius: 8px;
+
   ${
-    "" /* max-width: 200px;
-  max-height: auto;
-  object-fit: cover;
-  border-radius: 8px; */
+    "" /* @media screen and (max-width: 1024px) {
+    width: 200px;
+    height: 350px;
+  } */
   }
 `;
 

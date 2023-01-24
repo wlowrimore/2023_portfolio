@@ -1,13 +1,10 @@
 import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
 
-import {
-  NavigationContainer,
-  LogoContainer,
-  NavLinks,
-  NavLink,
-} from "./navigation.styles";
+import { NavigationContainer, LogoContainer } from "./navigation.styles";
+
 import Logo from "../../assets/logo.png";
+import Burger from "../../components/right-navigation/burgerNav.component";
 
 const Navigation = () => {
   return (
@@ -16,13 +13,7 @@ const Navigation = () => {
         <LogoContainer to="/">
           <img src={Logo} alt="home" />
         </LogoContainer>
-        <NavLinks>
-          <NavLink to="/">about</NavLink>
-          <NavLink to="projects">projects</NavLink>
-          <NavLink to="skills">skills</NavLink>
-          <NavLink to="contact">contact</NavLink>
-          <NavLink to="resume">resume</NavLink>
-        </NavLinks>
+        <Burger />
       </NavigationContainer>
       <Outlet />
     </Fragment>

@@ -23,10 +23,11 @@ const ProfileImgCard = () => {
 
   return (
     <RootContainer>
-      <Title>My name is William Lowrimore...</Title>
+      <Title>My name is William Lowrimore</Title>
       <AboutContainer>
-        <Image src={Selfie} alt="selfie" />
-
+        <ImageContainer>
+          <Image src={Selfie} alt="selfie" />
+        </ImageContainer>
         <AboutText />
         <AboutTextContainer></AboutTextContainer>
       </AboutContainer>
