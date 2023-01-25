@@ -19,6 +19,15 @@ export const ProjectListContainer = styled.div`
   span {
     display: none;
   }
+
+  @media screen and (min-width: 820px) {
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 8px 0;
+    align-items: center;
+  }
 `;
 
 export const ProjectListItem = styled.div`
@@ -66,6 +75,12 @@ export const ProjectListItem = styled.div`
       border-radius: 5px;
       padding: 6px 12px;
     }
+  }
+
+  @media screen and (min-width: 820px) {
+    width: 360px;
+    height: 300px;
+    margin: 12px;
   }
 `;
 

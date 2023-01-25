@@ -6,21 +6,22 @@ export const RootContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
   max-height: 85vh;
+
+  @media screen and (min-width: 320px) and (min-width: 480px) {
+  }
 `;
 
 export const Title = styled.h1`
   font-weight: bold;
   width: 70%;
   margin: 12px auto;
-  padding: 0 27px;
 
-  @media screen and (max-width: 1024px) {
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 0;
-    width: 100%;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 1.3em;
     text-align: center;
+    padding: 10px 0;
   }
 `;
 
@@ -28,20 +29,17 @@ export const AboutContainer = styled.div`
   display: flex;
   flex-direction: row;
   max-width: 70%;
-  padding: 14px 27px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px 12px 14px 16px;
   overflow: auto;
 
-  @media screen and (max-width: 1024px) {
-    flex-direction: column;
-    max-width: 100%;
-  }
-  ${
-    "" /* display: flex;
-  flex-weap: wrap;
-  width: 70%;
-  margin: 12px auto;
-  border: 1px solid black;
-  border-radius: 8px; */
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 600px;
+    height: auto;
   }
 `;
 
@@ -50,10 +48,10 @@ export const ImageContainer = styled.div`
   max-height: 350px;
   padding: 4px;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
     display: flex;
+    max-width: 500px;
     justify-content: center;
-    max-height: 350px;
   }
 `;
 
@@ -62,11 +60,8 @@ export const Image = styled.img`
   max-height: 350px;
   border-radius: 8px;
 
-  ${
-    "" /* @media screen and (max-width: 1024px) {
-    width: 200px;
-    height: 350px;
-  } */
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    max-width: 200px;
   }
 `;
 

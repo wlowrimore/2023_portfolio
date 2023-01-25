@@ -5,6 +5,10 @@ export const RootContainer = styled.div`
   flex-direction: column;
   height: 100vh;
   width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    height: 100vh;
+  }
 `;
 
 export const ContactContainer = styled.div`
@@ -15,6 +19,11 @@ export const ContactContainer = styled.div`
   margin: auto;
   ${"" /* padding: 0; */}
   align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    height: 60%;
+    margin-top: 0;
+  }
 `;
 
 export const Title = styled.h1`

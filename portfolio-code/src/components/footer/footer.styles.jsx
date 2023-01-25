@@ -3,17 +3,23 @@ import styled from "styled-components";
 export const FooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  background-color: white;
   position: fixed;
   bottom: 0;
   left: 0;
-  margin-bottom: 5px;
   width: 100%;
+  height: 60px;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
-    background-color: silver;
     color: #000;
     padding-top: 10px;
+    bottom: 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 30px 12px 60px;
+    ${"" /* height: 50px; */}
   }
 `;
 
@@ -24,6 +30,8 @@ export const FooterLeft = styled.div`
   margin: 0;
 
   h3 {
+    font-size: 14px;
+    padding-top: 20px;
     margin: 0;
 
     &span {
@@ -31,10 +39,15 @@ export const FooterLeft = styled.div`
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     font-size: 12px;
     text-align: center;
     padding-right: 16px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 12px;
+    margin: 40px 0 0 0;
   }
 `;
 
@@ -45,12 +58,19 @@ export const FooterRight = styled.div`
   margin: 0;
 
   h3 {
+    font-size: 14px;
+    padding-top: 20px;
     margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
   }
 
   @media screen and (max-width: 1024px) {
     font-size: 12px;
-    text-align: center;
-    padding: 8px;
+    margin: 40px 0 0 0;
   }
 `;

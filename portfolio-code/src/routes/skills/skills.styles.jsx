@@ -12,6 +12,15 @@ export const Title = styled.h1`
   width: 70%;
   margin: auto;
   padding: 12px 0;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: start;
+    padding: 12px 0;
+  }
 `;
 
 export const SkillsListContainer = styled.div`
@@ -23,6 +32,14 @@ export const SkillsListContainer = styled.div`
   height: 100%;
   width: 70%;
   margin: auto;
+
+  @media screen and (max-width: 1025px) {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    width: 100%;
+    height: 100vh;
+    ${"" /* padding-right: 10px; */}
+  }
 `;
 
 export const SkillContainer = styled.div`
@@ -48,6 +65,17 @@ export const SkillContainer = styled.div`
     height: auto;
     padding: 12px;
   }
+
+  @media screen and (max-width: 1025px) {
+    max-width: 100%;
+    max-height: 80%;
+    padding: 0;
+
+    img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+  }
 `;
 
 export const Name = styled.p`
@@ -60,6 +88,11 @@ export const ButtonContainer = styled.div`
   display: flex;
   justify-content: end;
   width: 70%;
-  margin: 20px auto;
+  margin: 10px auto 60px auto;
   padding: 14px 0;
+
+  @media screen and (max-width: 1025px) {
+    padding: 0;
+    margin-left: 18.5em;
+  }
 `;
