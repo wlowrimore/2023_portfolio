@@ -6,10 +6,10 @@ export const RootContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
-  max-height: 85vh;
+  height: auto;
 
   @media screen and (min-width: 320px) and (min-width: 480px) {
+    height: 400px;
   }
 `;
 
@@ -33,13 +33,13 @@ export const AboutContainer = styled.div`
   border: 1px solid black;
   border-radius: 8px;
   padding: 10px 12px 14px 16px;
-  overflow: auto;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-templayte-rows: repeat(2, 1fr);
     max-width: 600px;
-    height: auto;
+    border: none;
+    height: 70vh;
   }
 `;
 
@@ -66,20 +66,3 @@ export const Image = styled.img`
 `;
 
 export const AboutTextContainer = styled.div``;
-
-export const ButtonContainer = styled.div`
-  ${
-    "" /* display: flex;
-  justify-content: end;
-  width: 70%;
-  margin: 0 auto;
-  padding: 14px 0; */
-  }
-
-  ${
-    "" /* @media (max-width: 540px) {
-    position: absolute;
-    bottom: 0;
-  } */
-  }
-`;

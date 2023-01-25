@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const TextContainer = styled.div`
   display: flex;
   width: 100%;
+  max-height: 100%;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     max-height: 100%;

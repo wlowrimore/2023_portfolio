@@ -3,7 +3,6 @@ import {
   Title,
   AboutContainer,
   ImageContainer,
-  AboutTextContainer,
   Image,
 } from "./profile-image-card.styles";
 
@@ -19,7 +18,6 @@ const ProfileImgCard = () => {
           <Image src={Selfie} alt="selfie" />
         </ImageContainer>
         <AboutText />
-        <AboutTextContainer></AboutTextContainer>
       </AboutContainer>
     </RootContainer>
   );
