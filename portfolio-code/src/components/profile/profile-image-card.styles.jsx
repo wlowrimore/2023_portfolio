@@ -8,8 +8,10 @@ export const RootContainer = styled.div`
   width: 100%;
   height: auto;
 
-  @media screen and (min-width: 320px) and (min-width: 480px) {
+  ${
+    "" /* @media screen and (min-width: 320px) and (min-width: 480px) {
     height: 400px;
+  } */
   }
 `;
 
@@ -19,9 +21,11 @@ export const Title = styled.h1`
   margin: 12px auto;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    font-size: 1.3em;
+    font-size: 0.9em;
+    font-weight: bold;
     text-align: center;
-    padding: 10px 0;
+    padding-left: 2px;
+    margin: 0;
   }
 `;
 
@@ -35,11 +39,11 @@ export const AboutContainer = styled.div`
   padding: 10px 12px 14px 16px;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    display: grid;
-    grid-templayte-rows: repeat(2, 1fr);
-    max-width: 600px;
+    flex-direction: column;
     border: none;
-    height: 70vh;
+    max-width: 87%;
+    max-height: 70vh;
+    margin: auto;
   }
 `;
 

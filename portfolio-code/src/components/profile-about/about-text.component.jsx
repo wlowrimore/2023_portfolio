@@ -3,7 +3,7 @@ const AboutText = () => {
   return (
     <TextContainer>
       <Text>
-        I am a graduate of Vanderbilt University's Full Stack Coding Bootcamp.
+        I am a graduate of the Vanderbilt University Full Stack Coding Bootcamp.
         Upon completion of the course I received my certification in web
         development utilizing the M.E.R.N Stack. Throughout the program, I
         studied and implemented a variety of front-end and back-end skills. I

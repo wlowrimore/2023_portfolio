@@ -4,11 +4,9 @@ export const ProjectListContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
-  flex-direction: column;
-  align-items: center;
   height: 100vh;
   width: 70%;
-  margin: auto;
+  margin: 0 0 1em 20em;
   overflow-y: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -20,13 +18,13 @@ export const ProjectListContainer = styled.div`
     display: none;
   }
 
-  @media screen and (min-width: 820px) {
-    grid-template-columns: repeat(2, 1fr);
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
-    padding: 8px 0;
     align-items: center;
+    max-width: 100%;
+    margin: auto;
+    max-height: 100vh;
   }
 `;
 
@@ -36,7 +34,7 @@ export const ProjectListItem = styled.div`
   flex-direction: column;
   border: 1px solid black;
   border-radius: 8px;
-  width: 625px;
+  width: 550px;
   height: 400px;
   padding: 10px;
   margin: 12px 0;
@@ -77,10 +75,16 @@ export const ProjectListItem = styled.div`
     }
   }
 
-  @media screen and (min-width: 820px) {
-    width: 360px;
-    height: 300px;
-    margin: 12px;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+
+    img {
+      max-width: 100%;
+      padding: 0;
+      margin: 10px;
+    }
   }
 `;
 
