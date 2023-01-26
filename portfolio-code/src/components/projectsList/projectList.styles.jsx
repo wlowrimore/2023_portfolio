@@ -1,5 +1,17 @@
 import styled from "styled-components";
 
+export const RootContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    align-itmes: center;
+    height: 100vh;
+  }
+`;
+
 export const ProjectListContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -29,7 +41,6 @@ export const ProjectListContainer = styled.div`
 `;
 
 export const ProjectListItem = styled.div`
-  position: relative;
   display: flex;
   flex-direction: column;
   border: 1px solid black;
@@ -43,7 +54,6 @@ export const ProjectListItem = styled.div`
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
   img {
-    position: relative;
     max-width: 100%;
     height: 100%;
     padding: 12px;
@@ -81,9 +91,9 @@ export const ProjectListItem = styled.div`
     padding: 0;
 
     img {
-      max-width: 100%;
+      max-width: 60%;
       padding: 0;
-      margin: 10px;
+      margin: 10px 50px;
     }
   }
 `;

@@ -33,7 +33,7 @@ export const ButtonContainer = styled.div`
   width: 70%;
   height: 20%;
   margin-top: 18px;
-  margin-left: 12.2em;
+  margin-left: 15em;
   gap: 14px;
   padding: 0;
 
