@@ -12,12 +12,25 @@ export const Title = styled.h2`
   width: 70%;
   margin: 0;
   padding: 12px 0;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    padding-left: 2px;
+    margin: 0;
+  }
 `;
 
 export const IconsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 20px 30px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    justify-content: center;
+  }
 `;
 
 export const Icon = styled.span`

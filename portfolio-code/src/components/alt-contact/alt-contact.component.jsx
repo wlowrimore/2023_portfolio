@@ -3,7 +3,7 @@ import {
   Title,
   IconsContainer,
   Icon,
-} from "./alt-contact.stryles";
+} from "./alt-contact.styles";
 
 import {
   FaGithub,

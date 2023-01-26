@@ -81,7 +81,7 @@ const ResumeText = () => {
           {certificates.map((certificate) => (
             <CertificateCard key={certificate.id}>
               <img src={certificate.image} alt={certificate.name} />
-              <span>{certificate.name}</span>
+              <p>{certificate.name}</p>
             </CertificateCard>
           ))}
         </CertificateContainer>

@@ -3,44 +3,74 @@ import styled from "styled-components";
 export const ResumeTextContainer = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: block;
+  }
 `;
 
 export const Header = styled.div`
-  width: 40%;
+  width: 70%;
   height: auto;
   line-height: 2px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    h2 {
+      font-size: 18px;
+      max-width: 100%;
+    }
+  }
 `;
 
 export const City = styled.h4`
   letter-spacing: 0.5px;
   padding-bottom: 2px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+  }
 `;
 
 export const Phone = styled.p`
   padding-bottom: 2px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+  }
 `;
 
 export const Email = styled.span`
-  color: red;
+  color: black;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+  }
 `;
 
 export const SectionTitle = styled.h3`
   padding-top: 12px;
   font-size: 20px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+  }
 `;
 
 export const SectionBody = styled.div`
   padding: 0;
   margin: 0;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+  }
 `;
 
-export const Text = styled.span`
+export const Text = styled.p`
   display: flex;
   width: 100%;
   font-size: 16px;
   line-height: 1.7rem;
   overflow-y: auto;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 95%;
+  }
 `;
 
 export const Ul = styled.ul`
@@ -50,6 +80,10 @@ export const Ul = styled.ul`
   padding: 0;
   margin: 0;
   overflow-y: auto;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 93%;
+  }
 `;
 
 export const GridUl = styled.ul`
@@ -62,6 +96,13 @@ export const GridUl = styled.ul`
   height: auto;
   width: 100%;
   margin: auto;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    padding-right: 24px;
+  }
 `;
 
 export const ItalicLi = styled.li`
@@ -69,12 +110,21 @@ export const ItalicLi = styled.li`
   font-style: italic;
   text-indent: 20px;
   list-style: none;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+  }
 `;
 
 export const NormalLi = styled.li`
   font-size: 18px;
   text-indent: 20px;
   list-style: none;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 16px;
+    text-indent: 0;
+    line-height: 1.5em;
+  }
 `;
 
 export const CertificateContainer = styled.div`
@@ -82,6 +132,11 @@ export const CertificateContainer = styled.div`
   grid-template-columns: repeat(3, 2fr);
   column-gap: 20px;
   flex-direction: column;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
 `;
 
 export const CertificateCard = styled.div`
@@ -105,5 +160,23 @@ export const CertificateCard = styled.div`
     border: 1px solid black;
     border-radius: 3px;
     margin-bottom: 6px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    justify-content: start;
+    align-items: start;
+    padding: 0 0 14px 0;
+    margin: 0;
+    img {
+      display: none;
+    }
+
+    p {
+      font-size: 14px;
+      padding: 0;
+      margin: 0;
+      align-items: start;
+      justify-content: start;
+    }
   }
 `;

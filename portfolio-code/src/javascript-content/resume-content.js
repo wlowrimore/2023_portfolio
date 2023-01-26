@@ -5,11 +5,23 @@ export const courses = [
   },
   {
     id: 2,
-    name: "CSS | SCSS | CSS Frameworks",
+    name: "CSS",
+  },
+  {
+    id: 17,
+    name: "SCSS",
+  },
+  {
+    id: 18,
+    name: "CSS Frameworks",
   },
   {
     id: 3,
-    name: "JavaScript | Ecma Script (latest)",
+    name: "JavaScript",
+  },
+  {
+    id: 19,
+    name: "ECMA Script",
   },
   {
     id: 4,
@@ -57,7 +69,15 @@ export const courses = [
   },
   {
     id: 15,
-    name: "React Hooks | Custom Hooks",
+    name: "React Hooks",
+  },
+  {
+    id: 16,
+    name: "Custom Hooks",
+  },
+  {
+    id: 20,
+    name: "...Others",
   },
 ];
 

@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <RootContainer>
       <ContactContainer>
-        <Title>Contact Me</Title>
+        <Title>Contact</Title>
         <ContactForm />
         <AltContact />
       </ContactContainer>

@@ -56,7 +56,7 @@ export const languages = [
   },
   {
     id: 12,
-    title: "React Native | Firebase",
+    title: "React Native",
     image: "/logos/reactNativeFB.png",
   },
 ];

@@ -11,6 +11,16 @@ export const ContactFormContainer = styled.div`
   justify-content: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    max-height: 100vh;
+    border: none;
+  }
 `;
 
 export const Title = styled.h1`
@@ -28,6 +38,15 @@ export const Form = styled.form`
 
   h4 {
     letter-spacing: 0.5px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    padding: 12px;
+
+    h4 {
+      font-size: 14px;
+    }
   }
 `;
 
