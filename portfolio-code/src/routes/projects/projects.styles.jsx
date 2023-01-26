@@ -34,6 +34,13 @@ export const Title = styled.h1`
     text-align: center;
     margin: 40px auto;
   }
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -54,7 +61,11 @@ export const ButtonContainer = styled.div`
 
   @media screen and (min-width: 768px) and (max-width: 820px) {
     align-items: center;
-    ${"" /* margin: 1em 2em; */}
     max-width: 41%;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    max-width: 60.2%;
+    padding-bottom: 5%;
   }
 `;

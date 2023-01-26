@@ -31,6 +31,10 @@ export const ContactFormContainer = styled.div`
     max-height: 100vh;
     border: none;
   }
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    border: none;
+  }
 `;
 
 export const Title = styled.h1`
@@ -71,6 +75,10 @@ export const Form = styled.form`
     h4 {
       font-size: 14px;
     }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    width: 100%;
   }
 `;
 

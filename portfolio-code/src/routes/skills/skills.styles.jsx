@@ -31,6 +31,14 @@ export const Title = styled.h1`
     text-align: center;
     margin: 40px auto;
   }
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 `;
 
 export const SkillsListContainer = styled.div`

@@ -21,6 +21,10 @@ export const TextContainer = styled.div`
   @media screen and (min-width: 820px) and (max-width: 820px) {
     margin-top: 3em;
   }
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    margin: 0;
+  }
 `;
 
 export const Text = styled.div`
@@ -30,4 +34,10 @@ export const Text = styled.div`
   line-height: 1.7rem;
   margin-top: 12px;
   padding: 2px 0 10px 8px;
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    margin: 4px 0;
+    padding-right: 12px;
+    overflow: auto;
+  }
 `;

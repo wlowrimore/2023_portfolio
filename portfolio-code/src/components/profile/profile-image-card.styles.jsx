@@ -7,6 +7,12 @@ export const RootContainer = styled.div`
   align-items: center;
   width: 100%;
   height: auto;
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+  }
 `;
 
 export const Title = styled.h1`
@@ -34,6 +40,10 @@ export const Title = styled.h1`
   @media screen and (min-width: 820px) and (max-width: 820px) {
     margin: -1em 5em 0 0;
     position: absolute;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    font-size: 1.2em;
   }
 `;
 
@@ -63,6 +73,11 @@ export const AboutContainer = styled.div`
     max-height: 70vh;
     margin: auto;
   }
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    flex-direction: row;
+    max-height: 50vh;
+    padding: 0;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -82,6 +97,11 @@ export const ImageContainer = styled.div`
     justify-content: center;
     padding-left: 1.8em;
   }
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    display: flex;
+    width: 179px;
+  }
 `;
 
 export const Image = styled.img`
@@ -99,6 +119,9 @@ export const Image = styled.img`
 
   @media screen and (min-width: 768px) and (max-width: 769px) {
     padding-bottom: 1em;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    max-width: 700px;
   }
 `;
 

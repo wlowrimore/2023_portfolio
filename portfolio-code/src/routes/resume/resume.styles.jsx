@@ -17,6 +17,10 @@ export const RootContainer = styled.div`
     height: 100vh;
     width: 100%
   }
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const ResumeContainer = styled.div`
@@ -40,6 +44,10 @@ export const ResumeContainer = styled.div`
     margin-top: 0;
     padding: 12px 0;
   }
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const ResumeTitle = styled.h1`
@@ -62,6 +70,11 @@ export const ResumeTitle = styled.h1`
     text-align: center;
     width: auto;
     padding-left: 2px;
-    margin: 2em 0 0 0;
+    margin-top: 2em;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    text-align: center;
+    margin-top: 2em;
   }
 `;

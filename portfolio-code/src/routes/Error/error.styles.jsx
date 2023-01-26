@@ -34,6 +34,12 @@ export const Left = styled.div`
       width: 150px;
     }
   }
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    img {
+      width: 150px;
+    }
+  }
 `;
 
 export const ErrorCode = styled.h1`
@@ -52,6 +58,15 @@ export const ErrorCode = styled.h1`
 
   @media screen and (min-width: 320px) and (max-width: 540px) {
     padding-right: 50px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    padding: 0;
+
+    span {
+      padding-top: 4px;
+      padding-left: 20px;
+    }
   }
 `;
 
@@ -82,6 +97,11 @@ export const Right = styled.div`
   }
 
   @media screen and (min-width: 320px) and (max-width: 540px) {
+    img {
+      width: 300px;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
     img {
       width: 300px;
     }
