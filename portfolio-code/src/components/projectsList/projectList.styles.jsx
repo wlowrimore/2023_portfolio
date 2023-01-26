@@ -6,8 +6,14 @@ export const RootContainer = styled.div`
   width: 100%;
   height: 100vh;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
     align-itmes: center;
+    height: 100vh;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 820px) {
+    align-itmes: center;
+    width: 100%;
     height: 100vh;
   }
 `;
@@ -30,13 +36,21 @@ export const ProjectListContainer = styled.div`
     display: none;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
     margin: auto;
     max-height: 100vh;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 820px) {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 100%;
+    align-items: center;
   }
 `;
 
@@ -85,7 +99,7 @@ export const ProjectListItem = styled.div`
     }
   }
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
     max-width: 100%;
     max-height: 100%;
     padding: 0;
@@ -95,6 +109,10 @@ export const ProjectListItem = styled.div`
       padding: 0;
       margin: 10px 50px;
     }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 820px) {
+    max-width: 92%;
   }
 `;
 

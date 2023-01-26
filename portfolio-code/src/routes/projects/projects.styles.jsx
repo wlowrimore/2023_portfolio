@@ -7,8 +7,12 @@ export const RootContainer = styled.div`
   height: 100vh;
   width: 100%;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
     align-items: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 820px) {
+    align-items: start;
   }
 `;
 
@@ -18,12 +22,17 @@ export const Title = styled.h1`
   margin: 2em 0 0 9.9em;
   padding-top: 12px;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
     font-size: 0.9em;
     font-weight: bold;
     text-align: center;
     padding-left: 2px;
     margin: 0;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 820px) {
+    text-align: center;
+    margin: 40px auto;
   }
 `;
 
@@ -37,9 +46,15 @@ export const ButtonContainer = styled.div`
   gap: 14px;
   padding: 0;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
     display: flex;
     flex-direction: column;
     margin: 4px 30%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 820px) {
+    align-items: center;
+    ${"" /* margin: 1em 2em; */}
+    max-width: 41%;
   }
 `;

@@ -5,10 +5,21 @@ export const TextContainer = styled.div`
   width: 100%;
   max-height: 100%;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
     max-height: 100%;
     max-width: 100%;
     padding: 0 0 8px 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 768px) {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0 40px 8px 20px;
+    margin-top: 2em;
+  }
+
+  @media screen and (min-width: 820px) and (max-width: 820px) {
+    margin-top: 3em;
   }
 `;
 

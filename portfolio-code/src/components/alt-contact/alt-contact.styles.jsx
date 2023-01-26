@@ -13,7 +13,7 @@ export const Title = styled.h2`
   margin: 0;
   padding: 12px 0;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
     font-size: 0.9em;
     font-weight: bold;
     text-align: center;
@@ -28,7 +28,7 @@ export const IconsContainer = styled.div`
   justify-content: space-between;
   padding: 20px 30px;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
     justify-content: center;
   }
 `;

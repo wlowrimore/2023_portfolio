@@ -14,7 +14,7 @@ export const NavLinks = styled.ul`
   margin: 0 12px;
   flex-flow: row nowrap;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 765px) {
     flex-flow: column nowrap;
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(3px);

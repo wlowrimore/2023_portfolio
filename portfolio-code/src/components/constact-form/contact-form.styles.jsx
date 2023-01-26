@@ -12,7 +12,17 @@ export const ContactFormContainer = styled.div`
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    max-height: 100vh;
+    border: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 820px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,6 +38,11 @@ export const Title = styled.h1`
   width: 70%;
   margin: auto;
   padding: 12px 0;
+
+  @media screen and (min-width: 768px) and (max-width: 820px) {
+    text-align: center;
+    margin: 40px auto;
+  }
 `;
 
 export const Form = styled.form`
@@ -40,7 +55,16 @@ export const Form = styled.form`
     letter-spacing: 0.5px;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
+    width: 100%;
+    padding: 12px;
+
+    h4 {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 820px) {
     width: 100%;
     padding: 12px;
 

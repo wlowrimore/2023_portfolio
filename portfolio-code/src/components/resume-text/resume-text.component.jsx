@@ -72,6 +72,7 @@ const ResumeText = () => {
           Agile Development environment. This position focused on the AARP Ruby
           on Rails platform, as well as a React JS Medical Application for a
           prominent Spinal Surgical Firm.
+          <br />
           <br />I was also commissioned to create a SPA for a well established
           Professional Photographer whose clients include Modern Drummer
           Magazine, Bass Player Magazine, and many more alike.

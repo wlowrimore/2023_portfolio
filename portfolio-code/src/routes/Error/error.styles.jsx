@@ -11,7 +11,7 @@ export const ErrorContainer = styled.div`
   width: 70%;
   margin: auto;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
@@ -26,7 +26,7 @@ export const Left = styled.div`
     width: 220px;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
     width: 70%;
     margin: 20px 0 20px 60px;
 
@@ -50,7 +50,7 @@ export const ErrorCode = styled.h1`
     width: 100%;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
     padding-right: 50px;
   }
 `;
@@ -81,7 +81,7 @@ export const Right = styled.div`
     width: 400px;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 540px) {
     img {
       width: 300px;
     }
