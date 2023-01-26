@@ -10,6 +10,11 @@ export const ErrorContainer = styled.div`
   height: 100vh;
   width: 70%;
   margin: auto;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const Left = styled.div`
@@ -19,6 +24,15 @@ export const Left = styled.div`
 
   img {
     width: 220px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 70%;
+    margin: 20px 0 20px 60px;
+
+    img {
+      width: 150px;
+    }
   }
 `;
 
@@ -34,6 +48,10 @@ export const ErrorCode = styled.h1`
     letter-spacing: 0.5px;
     padding: 46px 0 0 14px;
     width: 100%;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    padding-right: 50px;
   }
 `;
 
@@ -61,5 +79,11 @@ export const Right = styled.div`
 
   img {
     width: 400px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    img {
+      width: 300px;
+    }
   }
 `;
