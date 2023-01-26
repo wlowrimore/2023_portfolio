@@ -71,6 +71,7 @@ export const ResumeTitle = styled.h1`
     width: auto;
     padding-left: 2px;
     margin-top: 2em;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1024px) and (max-width: 1024px) {

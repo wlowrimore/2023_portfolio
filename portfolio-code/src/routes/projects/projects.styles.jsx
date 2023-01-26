@@ -14,6 +14,10 @@ export const RootContainer = styled.div`
   @media screen and (min-width: 768px) and (max-width: 820px) {
     align-items: start;
   }
+
+  @media screen and (min-width: 1024px) and (max-width: 1024px) {
+    align-items: center;
+  }
 `;
 
 export const Title = styled.h1`
@@ -65,7 +69,7 @@ export const ButtonContainer = styled.div`
   }
 
   @media screen and (min-width: 1024px) and (max-width: 1024px) {
-    max-width: 60.2%;
+    max-width: 45%;
     padding-bottom: 5%;
   }
 `;
