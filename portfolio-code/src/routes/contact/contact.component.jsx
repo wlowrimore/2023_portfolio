@@ -1,5 +1,5 @@
 import AltContact from "../../components/alt-contact/alt-contact.component";
-import ContactForm from "../../components/constact-form/contact-form.component";
+import ContactForm from "../../components/contact-form/contact-form.component";
 
 import { ContactContainer, RootContainer, Title } from "./contact.styles";
 
