@@ -5,21 +5,26 @@ export const RootContainer = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100vh;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    align-itmes: center;
+    height: 100vh;
+  }
 `;
 
 export const Title = styled.h1`
   font-weight: bold;
   width: 70%;
-  margin: auto;
-  padding: 12px 0;
+  margin: 2em 0 0 8.5em;
+  padding-top: 12px;
 
-  @media screen and (max-width: 1024px) {
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 0;
-    width: 100%;
-    text-align: start;
-    padding: 12px 0;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    padding-left: 2px;
+    margin: 0;
   }
 `;
 
@@ -33,12 +38,19 @@ export const SkillsListContainer = styled.div`
   width: 70%;
   margin: auto;
 
-  @media screen and (max-width: 1025px) {
-    display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
-    width: 100%;
-    height: 100vh;
-    ${"" /* padding-right: 10px; */}
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    max-height: 100vh;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    ::-webkit-scrollbar {
+      display: none;
+    }
   }
 `;
 
@@ -66,15 +78,7 @@ export const SkillContainer = styled.div`
     padding: 12px;
   }
 
-  @media screen and (max-width: 1025px) {
-    max-width: 100%;
-    max-height: 80%;
-    padding: 0;
-
-    img {
-      max-width: 50px;
-      max-height: 50px;
-    }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
   }
 `;
 
@@ -91,8 +95,9 @@ export const ButtonContainer = styled.div`
   margin: 10px auto 60px auto;
   padding: 14px 0;
 
-  @media screen and (max-width: 1025px) {
-    padding: 0;
-    margin-left: 18.5em;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    margin: auto;
+    width: 100%;
+    justify-content: center;
   }
 `;
