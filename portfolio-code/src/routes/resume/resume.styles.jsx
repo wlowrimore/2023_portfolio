@@ -79,3 +79,22 @@ export const ResumeTitle = styled.h1`
     margin-top: 2em;
   }
 `;
+
+export const PrintableResumeLink = styled.span`
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+
+  a {
+    color: red;
+    padding: 4px;
+
+    &:hover {
+      color: blue;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 10px;
+  }
+`;
