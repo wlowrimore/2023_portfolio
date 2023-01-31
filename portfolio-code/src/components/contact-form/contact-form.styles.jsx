@@ -103,3 +103,19 @@ export const TextArea = styled.textarea`
   padding: 0 4px;
   margin-bottom: 25px;
 `;
+
+export const AltEmailLink = styled.div`
+  text-align: center;
+  font-size: 18px;
+  color: red;
+  padding-top: 20px;
+
+  a {
+    color: blue;
+
+    &:hover {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+`;
