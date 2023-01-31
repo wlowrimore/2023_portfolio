@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FooterContainer } from "../../components/footer/footer.styles";
 
 export const RootContainer = styled.div`
   display: flex;

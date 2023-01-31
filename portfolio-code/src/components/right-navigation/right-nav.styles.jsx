@@ -5,6 +5,12 @@ export const NavLink = styled(Link)`
   padding: 15px 0px;
   font-size: 18px;
   cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: red;
+  }
 `;
 
 export const NavLinks = styled.ul`
