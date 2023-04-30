@@ -1,3 +1,4 @@
+import emailjs from "@emailjs/browser";
 import { useState } from "react";
 
 import Button from "../Button/button.component";
@@ -24,26 +25,26 @@ const ContactForm = () => {
     }));
   }
 
-  const submitEmail = async (e) => {
+  const submitEmail = (e) => {
     e.preventDefault();
-    console.log({ mailerState });
-    await fetch("http://localhost:3001/send", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({ mailerState }),
-    })
-      .then((res) => res.json())
-      .then(async (res) => {
-        const resData = await res;
-        console.log(resData);
-        if (resData.status === "success") {
-          alert("Message Sent");
-        } else if (resData.status === "fail") {
-          alert("Message failed to send");
+
+    emailjs
+      .sendForm(
+        "service_k4ijfrq",
+        "template_6cu7t3j",
+        "#form",
+        "6mMLJJUzkP7lq3rbP"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message Sent!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Message Failed to Send!");
         }
-      })
+      )
       .then(() => {
         setMailerState({
           email: "",
@@ -55,7 +56,7 @@ const ContactForm = () => {
 
   return (
     <ContactFormContainer>
-      <Form onSubmit={submitEmail}>
+      <Form id="form" onSubmit={submitEmail}>
         <h4>Let's Connect!</h4>
         <Label htmlFor="name">Name</Label>
         <Input

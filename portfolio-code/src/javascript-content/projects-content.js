@@ -22,10 +22,10 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Meals Mobile App",
-    description: "React Native | Expo",
-    image: "siteImages/mealsMobile.png",
-    repoUrl: "https://www.github.com/wlowrimore/meals_mobile_app",
+    title: "Course and Code",
+    description: "React | NextJS 13 | SEO",
+    image: "public/siteImages/next13_SEO.png",
+    repoUrl: "https://github.com/wlowrimore/nextjs_13_explained",
   },
   {
     id: 5,
