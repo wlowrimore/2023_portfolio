@@ -22,9 +22,9 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Course and Code",
+    title: "Course and Code NextJs 13",
     description: "ReactJS 18 | NextJS 13 | SEO",
-    image: "public/siteImages/next13_SEO.png",
+    image: "/siteImages/next13_SEO.png",
     repoUrl: "https://github.com/wlowrimore/nextjs_13_explained",
   },
   {
