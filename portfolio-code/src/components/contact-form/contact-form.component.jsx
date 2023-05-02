@@ -8,7 +8,6 @@ import {
   Label,
   Input,
   TextArea,
-  AltEmailLink,
 } from "./contact-form.styles";
 
 const ContactForm = () => {
@@ -88,11 +87,6 @@ const ContactForm = () => {
         <Button buttonType={"inverted"} type="submit">
           Send
         </Button>
-        <AltEmailLink>
-          * Due to configuration changes, please use this
-          <a href="mailto:wlowrimore@gmail.com"> temporary link </a>
-          for contact.
-        </AltEmailLink>
       </Form>
     </ContactFormContainer>
   );
