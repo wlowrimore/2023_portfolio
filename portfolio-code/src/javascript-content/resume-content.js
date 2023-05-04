@@ -49,7 +49,7 @@ export const courses = [
   },
   {
     id: 10,
-    name: "API",
+    name: "Rest API | Third Party API",
   },
   {
     id: 11,

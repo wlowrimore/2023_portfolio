@@ -32,10 +32,10 @@ const ResumeText = () => {
       </Header>
       <SectionTitle>Objective</SectionTitle>
       <Text>
-        As a certified full-stack developer with a passion for front-end
-        development, I am currently seeking a web development role that will
-        allow me to contribute my skills as well as develop new skills along the
-        way.
+        I am currently seeking a Software Developer role. I have experience as a
+        Junior Software Developer with multiple certifications. These
+        certifications include a Full Stack Developer Certificate from
+        Vanderbilt University Coding Bootcamp.
       </Text>
       <SectionTitle>Education</SectionTitle>
       <SectionBody>
