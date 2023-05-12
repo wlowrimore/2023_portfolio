@@ -15,10 +15,10 @@ export const projects = [
   },
   {
     id: 3,
-    title: "README.md Generator",
-    description: "Node JS | VS Code | Bash",
-    image: "/siteImages/readMeGenerator.png",
-    repoUrl: "https://www.github.com/wlowrimore/vandy-bc-readme-gen-2022",
+    title: "Smith Electrical SEO",
+    description: "React | NextJS | SEO",
+    image: "/siteImages/smith-electrical.png",
+    repoUrl: "https://www.github.com/wlowrimore/smith-electrical",
   },
   {
     id: 4,
@@ -87,5 +87,12 @@ export const projects = [
     description: "HTML | CSS | JavaScript",
     image: "/siteImages/codeQuiz.png",
     repoUrl: "https://www.github.com/wlowrimore/vandy_bc_code_quiz_chlng4_2022",
+  },
+  {
+    id: 13,
+    title: "README.md Generator",
+    description: "Node JS | VS Code | Bash",
+    image: "/siteImages/readMeGenerator.png",
+    repoUrl: "https://www.github.com/wlowrimore/vandy-bc-readme-gen-2022",
   },
 ];
